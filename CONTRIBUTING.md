@@ -1,0 +1,7 @@
+# Contributing / Katkı
+
+Open an issue describing the observed behavior and expected behavior without including tokens, user IDs or private server contents. Keep changes focused. Use Node.js 24 and run `npm ci --ignore-scripts`, `npm run check`, `npm audit --audit-level=low` and helper syntax checks documented in README before proposing a PR.
+
+Preserve manager permission rechecks, explicit private publication previews, own-message/guild/channel validation, URL syntax constraints, bounded temporary state and absence of click tracking. New data collection/permissions need a clear purpose, documented retention and tests. Public card wire format is versioned: do not break existing v1 cards without documenting migration. Dependency updates require reviewing licenses, lockfile registry/integrity and audit results. Do not include `.env`, `node_modules` or build output. Use concise commit titles describing the actual change.
+
+Sorun ve beklenen davranışı token, üye kimliği veya özel sunucu içeriği eklemeden açıklayın. Node.js 24 kullanın ve README kontrollerini çalıştırın. Yönetici izin denetimleri, özel önizleme, açık yayın onayı, özgün bot mesajı/sunucu/kanal doğrulaması, adres filtreleri ve sınırlı bellek korunmalıdır. Yeni veri veya izin eklemek gerekçelendirilmelidir. v1 kartları için uyumluluk/migrasyon belirtin; bağımlılık lisans ve bütünlüğünü inceleyin. `.env` veya derlenmiş çıktıları eklemeyin.
